@@ -1,0 +1,8 @@
+function getSubstringBetweenFirstAndSecondSpace(str) {
+const firstSpaceIndex = str.indexOf(' ');
+const secondSpaceIndex = str.indexOf(' ', firstSpaceIndex + 1);
+if (firstSpaceIndex === secondSpaceIndex || secondSpaceIndex === -1) {
+return '';}
+const substring = str.substring(firstSpaceIndex + 1, secondSpaceIndex); return substring;}
+const str = 'Рад, что ты пришел';
+const substring = getSubstringBetweenFirstAndSecondSpace(str); console.log(substring);

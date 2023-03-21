@@ -1,0 +1,8 @@
+let arr = [3, 5, 1, 7, 4, 2];
+let maxSum = arr[0] + arr[1];
+let maxIndex = 0;
+for (let i = 1; i < arr.length - 1; i++) {
+let sum = arr[i] + arr[i + 1]; if (sum > maxSum) {
+maxSum = sum;
+maxIndex = i; } }
+console.log(arr[maxIndex], arr[maxIndex + 1]);

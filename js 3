@@ -1,0 +1,5 @@
+let year = 2024;
+let isLeapYear = false; if (year % 4 === 0) {
+if (year % 100 !== 0 || year % 400 === 0) { isLeapYear = true; }
+}
+let daysInYear = isLeapYear ? 366 : 365; console.log(daysInYear);

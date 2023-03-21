@@ -1,0 +1,12 @@
+function remDup(array) {
+    const result = [];
+    const seen = {};
+    for (let i = 0; i < array.length; i++) {
+    const item = array[i];
+    const lowerCaseItem = item.toLowerCase(); if (!seen[lowerCaseItem]) {
+    result.push(item); seen[lowerCaseItem] = true;}
+    }
+    return result;}
+    const array = ['BLO', 'aro', 'ArO', 'cra', 'btu', 'blo']; 
+    const result = remDup(array); 
+    console.log(result);

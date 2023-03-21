@@ -1,0 +1,8 @@
+function findShortestWordLength(str) {
+const words = str.split(' ');
+const shortestWordLength = words.reduce((minLength, word) => {
+const wordLength = word.length;
+return wordLength < minLength ? wordLength : minLength; }, Infinity);
+return shortestWordLength;}
+const str = 'мой друг купил компьютер';
+const shortestWordLength = findShortestWordLength(str); console.log(shortestWordLength);

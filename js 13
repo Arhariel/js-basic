@@ -1,0 +1,12 @@
+const expr = '1+7-5-1';
+let result = 0;
+let num = '';
+let operator = '+';
+for (let i = 0; i < expr.length; i++) {
+const ch = expr.charAt(i); if (ch === '+' || ch === '-') {
+result = (operator === '+') ? result + parseInt(num) : result - parseInt(num); operator = ch;
+num = '';
+} else {
+num += ch; }
+}
+result = (operator === '+') ? result + parseInt(num) : result - parseInt(num); console.log(result);
